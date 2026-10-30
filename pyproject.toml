@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frame-extractor"
+version = "1.0.0"
+description = "Extract frames from videos via CLI or MCP server"
+requires-python = ">=3.10"
+dependencies = ["opencv-python-headless>=4.8", "numpy>=1.24", "tqdm>=4.66", "mcp>=1.2,<2", "requests>=2.31", "platformdirs>=3.6"]
+
+[project.optional-dependencies]
+transcribe = ["faster-whisper>=1.1"]
+
+[project.scripts]
+frame-extractor = "frame_extractor.cli:main"
+frame-extractor-mcp = "frame_extractor.mcp_server:main"
+ado-frames = "frame_extractor.azure_devops:main"
+video-transcribe = "frame_extractor.transcribe:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

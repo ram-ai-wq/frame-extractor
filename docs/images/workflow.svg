@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="510" viewBox="0 0 1120 510" role="img" aria-labelledby="title desc">
+  <title id="title">Frame Extractor workflow</title>
+  <desc id="desc">Local videos, folders, and Azure DevOps Work Items are processed into frames and contact sheets. Optional audio transcription creates text, subtitle, and JSON files. Outputs are saved in the user's operating-system folders.</desc>
+  <defs>
+    <linearGradient id="header" x1="0" x2="1">
+      <stop offset="0" stop-color="#18324f"/>
+      <stop offset="1" stop-color="#205d68"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#6b849b"/>
+    </marker>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+      .title { fill: #fff; font-size: 24px; font-weight: 700; }
+      .subtitle { fill: #c9d8e6; font-size: 13px; }
+      .label { fill: #1d344c; font-size: 14px; font-weight: 700; }
+      .detail { fill: #607387; font-size: 12px; }
+      .small { fill: #486176; font-size: 11px; }
+      .card { fill: #fff; stroke: #d7e1eb; stroke-width: 1.5; }
+      .node { fill: #f4f8fb; stroke: #c7d7e5; stroke-width: 1.5; }
+      .line { fill: none; stroke: #6b849b; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1120" height="510" rx="18" fill="#f3f6fa"/>
+  <rect width="1120" height="88" rx="18" fill="url(#header)"/>
+  <path d="M0 70 Q560 110 1120 70 V88 Q1120 88 1102 88 H18 Q0 88 0 70Z" fill="url(#header)"/>
+  <text x="34" y="40" class="title">One workflow, multiple ways to start</text>
+  <text x="34" y="64" class="subtitle">Process locally or from Azure DevOps; keep generated files in your user folders.</text>
+
+  <text x="36" y="124" class="small" font-weight="700" letter-spacing="1">INPUT</text>
+  <text x="422" y="124" class="small" font-weight="700" letter-spacing="1">PROCESSING</text>
+  <text x="806" y="124" class="small" font-weight="700" letter-spacing="1">RESULTS</text>
+
+  <rect x="34" y="144" width="260" height="66" rx="12" class="card"/>
+  <circle cx="65" cy="177" r="17" fill="#e1f1f1"/>
+  <path d="M57 168h12l5 5v13H57z M69 168v6h5 M60 180h10 M60 184h7" fill="none" stroke="#237c7a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="94" y="171" class="label">Video file</text>
+  <text x="94" y="190" class="detail">MP4, MOV, AVI, MKV, and more</text>
+
+  <rect x="34" y="224" width="260" height="66" rx="12" class="card"/>
+  <circle cx="65" cy="257" r="17" fill="#e7edfa"/>
+  <path d="M56 250h7l3 3h9v12H56z M59 247h7l3 3" fill="none" stroke="#526ca5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="94" y="251" class="label">Folder of videos</text>
+  <text x="94" y="270" class="detail">A separate result folder per video</text>
+
+  <rect x="34" y="304" width="260" height="66" rx="12" class="card"/>
+  <circle cx="65" cy="337" r="17" fill="#fff0df"/>
+  <path d="M56 329h18v13H56z M60 346h10 M65 342v4 M60 333h10" fill="none" stroke="#bd7730" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="94" y="331" class="label">Azure DevOps Work Item</text>
+  <text x="94" y="350" class="detail">Download video attachments first</text>
+
+  <path d="M294 177 H374 Q392 177 392 195 V235 H422" class="line"/>
+  <path d="M294 257 H422" class="line"/>
+  <path d="M294 337 H374 Q392 337 392 319 V279 H422" class="line"/>
+
+  <rect x="422" y="180" width="250" height="154" rx="16" fill="#e8f4f2" stroke="#9fc9c3" stroke-width="1.5"/>
+  <circle cx="547" cy="220" r="26" fill="#237c7a"/>
+  <path d="M536 208h14l8 8v17h-22z M550 208v9h8 M540 222h14 M540 228h11" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="547" y="270" text-anchor="middle" class="label">Frame Extractor</text>
+  <text x="547" y="291" text-anchor="middle" class="detail">Sample · filter · timestamp</text>
+  <text x="547" y="311" text-anchor="middle" class="small">OpenCV · CLI · MCP</text>
+
+  <path d="M672 218 H730 Q748 218 748 200 V186 H790" class="line"/>
+  <path d="M672 256 H790" class="line"/>
+  <path d="M672 296 H730 Q748 296 748 314 V326 H790" class="line"/>
+
+  <rect x="790" y="144" width="294" height="82" rx="12" class="card"/>
+  <circle cx="822" cy="184" r="20" fill="#e3f2ed"/>
+  <rect x="813" y="173" width="18" height="22" rx="2" fill="none" stroke="#34836d" stroke-width="1.7"/>
+  <path d="M817 179h10 M817 183h10 M817 187h7" stroke="#34836d" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="854" y="178" class="label">Frame images</text>
+  <text x="854" y="198" class="detail">Timestamped JPG or PNG files</text>
+
+  <rect x="790" y="250" width="294" height="82" rx="12" class="card"/>
+  <circle cx="822" cy="291" r="20" fill="#f0eafa"/>
+  <path d="M813 280h18v22h-18z M817 285h10 M817 290h10 M817 295h7" fill="none" stroke="#7953a6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="854" y="285" class="label">Review artifacts</text>
+  <text x="854" y="305" class="detail">Contact sheets and index.csv</text>
+
+  <rect x="422" y="354" width="350" height="72" rx="12" class="node"/>
+  <text x="442" y="382" class="label">Optional: video-transcribe</text>
+  <text x="442" y="404" class="detail">Audio / video to text, subtitles, and JSON</text>
+
+  <rect x="790" y="358" width="294" height="68" rx="12" fill="#eef5fc" stroke="#bfd3e6" stroke-width="1.5"/>
+  <text x="812" y="385" class="label">User folders on your OS</text>
+  <text x="812" y="406" class="detail">Pictures · Downloads · Documents</text>
+  <path d="M937 332 V358" fill="none" stroke="#a2b8ca" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <rect x="34" y="454" width="1050" height="34" rx="10" fill="#e8eef5"/>
+  <text x="559" y="476" text-anchor="middle" class="small">Windows known folders · macOS home folders · Linux XDG directories · explicit output paths supported</text>
+</svg>

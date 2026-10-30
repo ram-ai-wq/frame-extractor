@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="460" viewBox="0 0 1120 460" role="img" aria-labelledby="title desc">
+  <title id="title">Frame extraction output example</title>
+  <desc id="desc">An illustrative contact sheet with six sample frame thumbnails alongside the output folder containing timestamped frames, contact sheets, and an index CSV.</desc>
+  <defs>
+    <linearGradient id="banner" x1="0" x2="1">
+      <stop offset="0" stop-color="#18324f"/>
+      <stop offset="1" stop-color="#205d68"/>
+    </linearGradient>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+      .title { fill: #fff; font-size: 23px; font-weight: 700; }
+      .sub { fill: #d3e0eb; font-size: 13px; }
+      .label { fill: #203950; font-size: 14px; font-weight: 700; }
+      .detail { fill: #687d90; font-size: 12px; }
+      .mono { fill: #40586d; font: 11px Consolas, "SFMono-Regular", monospace; }
+      .panel { fill: #fff; stroke: #d6e0e9; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <rect width="1120" height="460" rx="18" fill="#f3f6fa"/>
+  <rect width="1120" height="82" rx="18" fill="url(#banner)"/>
+  <path d="M0 64 Q560 100 1120 64 V82 Q1120 82 1102 82 H18 Q0 82 0 64Z" fill="url(#banner)"/>
+  <text x="34" y="38" class="title">From video to review-ready files</text>
+  <text x="34" y="61" class="sub">Illustrative output: timestamps, a visual overview, and a searchable index.</text>
+
+  <rect x="34" y="108" width="650" height="310" rx="14" class="panel"/>
+  <text x="58" y="140" class="label">Contact sheet</text>
+  <text x="58" y="161" class="detail">Each tile shows a sampled frame and its video time.</text>
+
+  <g>
+    <rect x="58" y="180" width="190" height="88" rx="7" fill="#dbe9ee"/>
+    <rect x="58" y="180" width="190" height="58" rx="7" fill="#527e87"/>
+    <path d="M58 226 Q104 205 151 228 T248 218 V238 H58Z" fill="#335b68"/>
+    <circle cx="202" cy="198" r="12" fill="#f6ce83"/>
+    <rect x="58" y="238" width="190" height="30" fill="#203950"/>
+    <text x="70" y="258" fill="#fff" font-size="11" font-family="Consolas, monospace">00:00:02  ·  #000060</text>
+
+    <rect x="264" y="180" width="190" height="88" rx="7" fill="#e6e5d7"/>
+    <rect x="264" y="180" width="190" height="58" rx="7" fill="#88a69a"/>
+    <path d="M264 225 Q306 215 354 221 T454 214 V238 H264Z" fill="#456d62"/>
+    <circle cx="407" cy="198" r="12" fill="#f4d18c"/>
+    <rect x="264" y="238" width="190" height="30" fill="#203950"/>
+    <text x="276" y="258" fill="#fff" font-size="11" font-family="Consolas, monospace">00:00:04  ·  #000120</text>
+
+    <rect x="470" y="180" width="190" height="88" rx="7" fill="#dce8ee"/>
+    <rect x="470" y="180" width="190" height="58" rx="7" fill="#638e9b"/>
+    <path d="M470 224 Q512 204 560 225 T660 214 V238 H470Z" fill="#365e70"/>
+    <circle cx="612" cy="198" r="12" fill="#f1ca7e"/>
+    <rect x="470" y="238" width="190" height="30" fill="#203950"/>
+    <text x="482" y="258" fill="#fff" font-size="11" font-family="Consolas, monospace">00:00:06  ·  #000180</text>
+
+    <rect x="58" y="282" width="190" height="88" rx="7" fill="#e9e1d2"/>
+    <rect x="58" y="282" width="190" height="58" rx="7" fill="#b48666"/>
+    <path d="M58 326 Q106 310 153 328 T248 315 V340 H58Z" fill="#725746"/>
+    <circle cx="202" cy="300" r="12" fill="#f6d79a"/>
+    <rect x="58" y="340" width="190" height="30" fill="#203950"/>
+    <text x="70" y="360" fill="#fff" font-size="11" font-family="Consolas, monospace">00:00:08  ·  #000240</text>
+
+    <rect x="264" y="282" width="190" height="88" rx="7" fill="#dce8df"/>
+    <rect x="264" y="282" width="190" height="58" rx="7" fill="#789c8b"/>
+    <path d="M264 326 Q312 306 359 328 T454 316 V340 H264Z" fill="#456b5c"/>
+    <circle cx="407" cy="300" r="12" fill="#f5d38f"/>
+    <rect x="264" y="340" width="190" height="30" fill="#203950"/>
+    <text x="276" y="360" fill="#fff" font-size="11" font-family="Consolas, monospace">00:00:10  ·  #000300</text>
+
+    <rect x="470" y="282" width="190" height="88" rx="7" fill="#dfe4ec"/>
+    <rect x="470" y="282" width="190" height="58" rx="7" fill="#7589a0"/>
+    <path d="M470 326 Q512 308 560 328 T660 316 V340 H470Z" fill="#495e78"/>
+    <circle cx="612" cy="300" r="12" fill="#f5d28e"/>
+    <rect x="470" y="340" width="190" height="30" fill="#203950"/>
+    <text x="482" y="360" fill="#fff" font-size="11" font-family="Consolas, monospace">00:00:12  ·  #000360</text>
+  </g>
+  <text x="58" y="397" class="detail">Example artwork is an illustration, not a frame from a bundled video.</text>
+
+  <rect x="716" y="108" width="370" height="310" rx="14" class="panel"/>
+  <text x="742" y="140" class="label">Output folder</text>
+  <text x="742" y="164" class="mono">Pictures/frame-extractor/meeting/</text>
+  <path d="M742 178 H1060" stroke="#e0e7ee"/>
+
+  <circle cx="755" cy="208" r="11" fill="#e4f1ed"/>
+  <path d="M750 208l4 4 7-8" fill="none" stroke="#34836d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="778" y="212" class="mono">frame_000060_00-00-02.jpg</text>
+
+  <circle cx="755" cy="242" r="11" fill="#e4f1ed"/>
+  <path d="M750 242l4 4 7-8" fill="none" stroke="#34836d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="778" y="246" class="mono">frame_000120_00-00-04.jpg</text>
+
+  <circle cx="755" cy="276" r="11" fill="#e4f1ed"/>
+  <path d="M750 276l4 4 7-8" fill="none" stroke="#34836d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="778" y="280" class="mono">frame_000180_00-00-06.jpg</text>
+
+  <rect x="742" y="302" width="318" height="1" fill="#e0e7ee"/>
+  <path d="M747 322h16v16h-16z M751 326h8 M751 330h8 M751 334h6" fill="none" stroke="#54718a" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="778" y="335" class="mono">contact-sheets/sheet_001_...jpg</text>
+  <path d="M747 354h16v19h-16z M751 359h8 M751 363h8 M751 367h6" fill="none" stroke="#54718a" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="778" y="367" class="mono">index.csv</text>
+  <text x="742" y="399" class="detail">The folder is created on first use.</text>
+</svg>
